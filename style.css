@@ -210,3 +210,25 @@ main {
 		margin-top: 0;
 	}
 }
+
+/* Logo Section Styling */
+
+.logo {
+	background-color: #1d1c1c;
+}
+
+.logo div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 3rem;
+	padding: 3rem 2rem;
+}
+
+/* Media Queries for Logo Section */
+
+@media (max-width: 767px) {
+	.logo div img {
+		width: 35%;
+	}
+}
