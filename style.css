@@ -521,3 +521,59 @@ main {
 		font-size: 1rem;
 	}
 }
+
+/* Pricing Section Styling */
+
+.price {
+	padding: 8rem 0;
+}
+
+.price-header {
+	display: flex;
+	justify-content: center;
+	padding: 0 2rem;
+}
+
+.price-header h2 {
+	font-size: 3.5rem;
+	font-weight: 500;
+	text-align: center;
+	width: 65%;
+}
+
+.price-header img {
+	position: relative;
+	top: 4rem;
+}
+
+/* Media Queries for Pricing Section */
+
+@media (max-width: 1023px) {
+	.price {
+		padding: 6.5rem 0;
+	}
+
+	.price-header h2 {
+		font-size: 3rem;
+	}
+
+	.price-header img {
+		width: 3rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.price {
+		padding: 5rem 0;
+	}
+
+	.price-header h2 {
+		font-size: 2.5rem;
+		width: 100%;
+	}
+
+	.price-header img {
+		width: 1.5rem;
+		top: 6rem;
+	}
+}
