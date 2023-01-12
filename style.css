@@ -837,3 +837,104 @@ main {
 		width: 1.3rem;
 	}
 }
+
+/* Sign Up Section Styling */
+
+.signup {
+	padding: 5rem 0;
+}
+
+.signup-text {
+	display: flex;
+	justify-content: center;
+	padding: 0 2rem;
+}
+
+.signup-text h2 {
+	font-size: 3.5rem;
+	font-weight: 500;
+	text-align: center;
+	width: 75%;
+}
+
+.signup-form {
+	margin: 5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+.signup-form .inputs {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #292828;
+	border: none;
+	border-radius: 2rem;
+	padding: 2.5rem 1.5rem;
+	gap: 1rem;
+}
+
+.inputs input {
+	background-color: #3e3d3d;
+	color: #ffffff;
+	font-size: 1rem;
+	border: 2px solid transparent;
+	border-radius: 2rem;
+	outline: none;
+	padding: 1.1rem 1.5rem;
+	flex: 1;
+}
+
+.inputs input::placeholder {
+	color: #ffffff;
+	opacity: 0.6;
+}
+
+.inputs input:focus {
+	border: 2px solid #ffffff;
+}
+
+.inputs button {
+	background-color: #0c8bfd;
+	color: #ffffff;
+	font-size: 1rem;
+	border: 2px solid transparent;
+	border-radius: 2rem;
+	padding: 1.1rem 2rem;
+}
+
+.inputs button:hover {
+	background-color: #ffffff;
+	color: #0c8bfd;
+	border: 2px solid #0c8bfd;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+/* Media Queries for Sign Up Section */
+
+@media (max-width: 1023px) {
+	.signup-text h2 {
+		font-size: 3rem;
+		width: 100%;
+	}
+
+	.signup-form .inputs {
+		flex-direction: column;
+		align-items: stretch;
+		width: 80%;
+	}
+}
+
+@media (max-width: 767px) {
+	.signup-text h2 {
+		font-size: 2.5rem;
+	}
+
+	.signup-form .inputs {
+		width: 100%;
+	}
+}
