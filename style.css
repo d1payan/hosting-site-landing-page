@@ -639,7 +639,9 @@ main {
 	transition: all 0.5s;
 	cursor: pointer;
 }
+
 /* Media Queries for Pricing Section */
+
 @media (max-width: 1023px) {
 	.price {
 		padding: 6.5rem 0;
@@ -677,5 +679,161 @@ main {
 
 	.price-cards {
 		margin-top: 7rem;
+	}
+}
+
+/* Review Section */
+
+.review {
+	padding: 8rem 0;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.review-text {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+.review-text h2 {
+	font-size: 3.5rem;
+	font-weight: 500;
+}
+
+.review-text p {
+	font-size: 1.1rem;
+	opacity: 60%;
+	width: 40%;
+}
+
+.review-cards {
+	margin: 5rem 2rem 0 2rem;
+	display: flex;
+	gap: 2rem;
+	overflow: auto;
+	padding-bottom: 4rem;
+}
+
+.review-cards > div {
+	background-color: #111010;
+	color: #ffffff;
+	min-width: 55%;
+	border: 1px solid #111010;
+	border-radius: 1.5rem;
+	padding: 2rem 1.5rem;
+}
+
+.review-cards .card-two {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.quote-logo img {
+	width: 1.2rem;
+}
+
+.reviewer {
+	margin: 2rem 0;
+}
+
+.reviewer p:last-child {
+	font-size: 14px;
+	line-height: 2rem;
+	font-weight: 300;
+}
+
+.review-lines p {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.ratings {
+	margin-top: 2rem;
+}
+
+.ratings img {
+	width: 1.5rem;
+	padding-right: 5px;
+}
+
+.review-cards::-webkit-scrollbar {
+	height: 0.4rem;
+}
+
+.review-cards::-webkit-scrollbar-track {
+	background-color: rgba(87, 87, 87, 0.2);
+	border-radius: 1rem;
+}
+
+.review-cards::-webkit-scrollbar-thumb {
+	background: #0c8bfd;
+	border-radius: 1rem;
+}
+
+/* Media Queries for Review Section */
+
+@media (max-width: 1023px) {
+	.review {
+		padding: 6.5rem 0;
+	}
+
+	.review-text {
+		flex-direction: column;
+		align-items: center;
+		gap: 2.5rem;
+	}
+
+	.review-text h2 {
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	.review-text p {
+		width: 100%;
+		text-align: center;
+	}
+
+	.review-cards > div {
+		min-width: 70%;
+	}
+}
+
+@media (max-width: 767px) {
+	.review {
+		padding: 5rem 0;
+	}
+
+	.review-text h2 {
+		font-size: 2.5rem;
+	}
+
+	.review-cards > div {
+		min-width: 80%;
+	}
+
+	.quote-logo img {
+		width: 1rem;
+	}
+
+	.reviewer {
+		margin: 1.5rem 0;
+	}
+
+	.reviewer p:last-child {
+		line-height: 1.5rem;
+	}
+
+	.review-lines p {
+		font-size: 1.1rem;
+	}
+
+	.ratings {
+		margin-top: 1.5rem;
+	}
+
+	.ratings img {
+		width: 1.3rem;
 	}
 }
